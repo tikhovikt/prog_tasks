@@ -6,19 +6,19 @@ public class Series {
     private BigDecimal answerAN = new BigDecimal(-1);
     private int n = -1;
 
-    public Series(BigDecimal epsilon) {
+    Series(BigDecimal epsilon) {
         this.epsilon = epsilon;
     }
 
-    public int getN() {
+    int getN() {
         return n;
     }
 
-    public BigDecimal getAnswerAN() {
+    BigDecimal getAnswerAN() {
         return answerAN;
     }
 
-    public BigDecimal getEpsilon() {
+    BigDecimal getEpsilon() {
         return epsilon;
     }
 
@@ -26,7 +26,7 @@ public class Series {
         this.epsilon = epsilon;
     }
 
-    public void solveSeries() {
+    void solveSeries() {
         for (int i=0 ; i<Integer.MAX_VALUE ; i++){
             BigDecimal devident = new BigDecimal(1.0);
             BigDecimal divider = new BigDecimal(Math.pow(i+1.0,2.0));

@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 public class task_1_2_main_class {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//ToDo: need add precis selection, how much number I want to see
+        //ToDo: need add precis selection, how much number I want to see
         System.out.println("Input epsilon");
         BigDecimal epsilon = new BigDecimal(br.readLine());
 
